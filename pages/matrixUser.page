@@ -1,0 +1,6 @@
+<apex:page sidebar="false" controller="UserController" tabStyle="User">
+    <apex:outputtext escape="false" value="{!content}"></apex:outputtext>
+    <apex:includeScript value="/soap/ajax/29.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/29.0/apex.js"/>
+    <apex:includeScript value="{!$Resource.matrix_js}"/>
+</apex:page>

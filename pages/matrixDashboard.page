@@ -1,0 +1,9 @@
+<apex:page sidebar="false" controller="MatrixTabController" tabstyle="MATRIX__tab" id="martixDashboard">
+    <apex:iframe id="matrixFrame" width="100%" height="800" scrolling="true" src="{!iframe_src}"/>
+    <apex:includeScript value="/soap/ajax/29.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/29.0/apex.js"/>
+    <script>
+        sforce.connection.sessionId = "{!$Api.Session_ID}";
+    </script>
+    <apex:includeScript value="{!$Resource.matrix_js}"/>
+</apex:page>
